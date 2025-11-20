@@ -18,26 +18,30 @@
 
 <form>
     <label>Name:</label>
-    <input type="text">
+    <input type="text" placeholder="Enter your full name">
 
     <label>Destination:</label>
-    <select>
+    <select id="package" onchange="calculatePrice()">
         <option>Goa</option>
         <option>Manali</option>
         <option>Dubai</option>
     </select>
 
     <label>Check In:</label>
-    <input type="date">
+    <input type="date" id="checkIn" onchange="calculatePrice()">
 
     <label>Check Out:</label>
-    <input type="date">
+    <input type="date" id="checkOut" onchange="calculatePrice()">
 
     <label>Number of Guests:</label>
-    <input type="number" min="1">
+    <input type="number" id="guests" min="1" onchange="calculatePrice()">
+
+    <p id="total" style="font-size:18px; font-weight:bold; margin:10px 0;"></p>
 
     <button type="submit">Book Now</button>
 </form>
 
+
+    <script src="script.js"></script>   
 </body>
 </html>
