@@ -182,3 +182,24 @@ ul li a {
     color: #1a73e8;
     font-weight: 600;
 }
+/* Fix Contact Page Layout */
+.contact-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-container p {
+    text-align: center;
+    width: 100%;
+}
+
+.contact-container ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.contact-container li {
+    list-style: none;
+    margin: 8px 0;
+}
